@@ -1,0 +1,14 @@
+{
+  "name": "dolou",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "pack": "cd topola-webpack && ./build.sh ../public/DOLOU.ged ../public/index.html /Users/nsimon/MyDocuments/PERSO/GRAMPS https://dolou.nsimonfr.workers.dev",
+    "deploy": "npm run pack && wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.2",
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "wrangler": "^3.0.0"
+  }
+}
